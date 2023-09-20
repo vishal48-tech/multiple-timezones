@@ -1,0 +1,104 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  border: 1px solid #434242;
+  background-color: #434242;
+  border-radius: 5px;
+}
+
+p{
+  font-size: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+button {
+  padding: 0;
+  background-color: #434242;
+  border: none;
+  color: #fff;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#editModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-content {
+  background-color: rgb(23, 23, 23);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+
+.close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#modal-head {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(23, 23, 23);
+  border: none;
+}
+
+#saveEdit {
+  margin: 0 0;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: dodgerblue;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  height: 30px;
+  width: 75px;
+  font-size: 1.3rem;
+  padding: 2px 15px;
+  color: #fff;
+  border: 1px solid dodgerblue;
+  margin-left: 0.3rem;
+}
+
+#selected-timezone{
+  height: 30px;
+}
+
+@media(max-width:700px){
+  .modal-content{
+    width: 70vw;
+  }
+}

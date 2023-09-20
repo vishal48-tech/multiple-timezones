@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use this website to view time & date of different timezone.">
+  <title>Time/Date Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div>
+    <h1>User Time and Date</h1>
+    <p>Timezone: <span id="timezone"></span>
+      <button id="select-zonebtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-pencil-square" viewBox="0 0 16 16">
+          <path
+            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z">
+          </path>
+          <path fill-rule="evenodd"
+            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z">
+          </path>
+        </svg></button>
+    </p>
+    <p>Current Time: <span id="current-time"></span></p>
+    <p>Current Date: <span id="current-date"></span></p>
+  </div>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <div id="modal-head">
+        <h2>Select Timezone</h2>
+        <span class="close">&times;</span>
+      </div>
+
+      <select id="selected-timezone" style="margin-top: 20px; padding: 0 10px;"></select>
+
+      <button id="saveEdit" class="btn" style="margin-top: 30px;">Change</button>
+    </div>
+  </div>
+</body>
+
+</html>
